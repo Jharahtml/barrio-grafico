@@ -1,3 +1,4 @@
+
 #container {
   text-align: center;
 
@@ -25,3 +26,15 @@
 #container a {
   text-decoration: none;
 }
+.pantallabg {
+  width: 100%;
+  height: 100&;
+  background-color: red;
+  /* background-image: url('/assets/bg/home.svg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ion-button{
+  --background: var(--ion-color-tertiary);
+}  
