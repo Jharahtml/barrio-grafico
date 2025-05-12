@@ -1,17 +1,26 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>map</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button style="color: #DDE55C;" menu="m1"></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons routerLink="/notificaciones" class="noti" slot="end">
+      <ion-icon style="color: #DDE55C;" name="notifications"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
+  
+    <!-- <ion-toolbar>
       <ion-title size="large">map</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    </ion-toolbar> -->
+  
   <ion-grid></ion-grid>
   <div id="map" style="height: 100vh; width: 100%;"></div>
+  <ion-button id="map-button" shape="round">
+  <ion-icon class="iconoscan" name="scan-outline"></ion-icon>
+  <div class="button-label">Escanear</div>
+  </ion-button>
 
 
 </ion-content>
